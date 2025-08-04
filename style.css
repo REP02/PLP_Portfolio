@@ -1,0 +1,138 @@
+/* Global reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #ebdcdcf1;
+  background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('images/Self_Image.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+header {
+  background-color: #06121f;
+  color: white;
+  padding: 10px 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav a {
+  color: rgb(226, 221, 221);
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #495057;
+  border-radius: 4px;
+}
+
+/* Hero section */
+#hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/plp_art.jpg') no-repeat center center/cover;
+  color: white;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+#hero img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#hero h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Container Utility Class */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Section styling */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  color: #222;
+  font-size: 1.5em;
+}
+
+ul {
+  list-style: disc inside;
+  margin-top: 10px;
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px 5px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hero h2 {
+    font-size: 1.5em;
+  }
+
+  section {
+    padding: 0 10px;
+  }
+}
